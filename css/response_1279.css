@@ -1,0 +1,707 @@
+@media (max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 260px;
+        --font_size: 15px;
+        --font_size_title: 30px;
+    }
+
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    .owl-dots
+    {
+        right: 20px;
+        bottom: 30px;
+
+        margin-right: 0;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo
+    {
+        display: flex;
+
+        width: 280px;
+        height: 70px;
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    header .logo img
+    {
+        height: 43px;
+    }
+
+    header .logo img + img
+    {
+        height: 40px;
+        margin: 0 0 0 10px;
+    }
+
+    header .logo:after
+    {
+        display: none;
+    }
+
+
+    header .info
+    {
+        position: static;
+
+        width: calc(100% - 280px);
+    }
+
+
+    header .menu
+    {
+        display: none;
+    }
+
+    header .menu.show
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        padding: 20px;
+
+        border-top: 1px solid #ddd;
+        background: #fff;
+    }
+
+    header .menu .item + .item
+    {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    header .menu .item > a
+    {
+        font-size: 18px;
+        line-height: normal;
+
+        padding: 10px 0;
+
+        text-align: center;
+    }
+
+
+    header .menu .item .sub_menu,
+    header .menu .item:hover .sub_menu
+    {
+        position: relative;
+        top: 0;
+
+        display: none;
+        visibility: hidden;
+
+        width: 100%;
+        margin-bottom: 10px;
+        padding-top: 0;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+    header .menu .item > a.touch_link + .sub_menu.show
+    {
+        top: 0;
+
+        display: block;
+    }
+
+    header .menu .sub_menu a
+    {
+        text-align: center;
+    }
+
+
+    header .contacts
+    {
+        margin-right: 30px;
+    }
+
+
+    header .search .link
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    header .search .link img
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    #search_modal
+    {
+        width: 100%;
+    }
+
+    header .search .input
+    {
+        font-size: 24px;
+
+        padding-left: 20px;
+    }
+
+
+    header .callback_btn
+    {
+        width: 70px;
+        height: 70px;
+        margin-right: 0;
+    }
+
+    header .callback_btn img
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+    header .menu_link
+    {
+        display: flex;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: 20px;
+    }
+
+    .page_head .cont > * + *
+    {
+        margin-top: 10px;
+    }
+
+
+    .breadcrumbs
+    {
+        height: auto;
+        padding-left: 0;
+    }
+
+
+    .page_head + .block
+    {
+        padding-bottom: 50px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 23px;
+    }
+
+    .text_block h3
+    {
+        margin-bottom: 10px !important;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: calc(50% - 30px);
+    }
+
+
+    .text_block .cols.bg
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 20px;
+    }
+
+    .text_block .cols.bg:before
+    {
+        height: calc(100% - 40px);
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        padding-left: 25px;
+    }
+
+
+
+    /*--------------
+        Callback
+    --------------*/
+    .callback_block .head
+    {
+        margin-bottom: 25px;
+    }
+
+    .callback_block .head .title
+    {
+        font-size: 22px;
+    }
+
+    .callback_block .head .desc
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*-------------
+        Garanti
+    -------------*/
+    .garanti
+    {
+        min-height: 185px;
+        padding: 25px 25px 25px 190px;
+    }
+
+    .garanti .icon
+    {
+        width: 157px;
+        height: calc(100% - 50px);
+        padding: 0 25px;
+    }
+
+
+
+    /*-------------------
+        Search result
+    -------------------*/
+    .search_result .search_form .input
+    {
+        font-size: 24px;
+
+        padding-left: 30px;
+    }
+
+
+    .search_result .product > * + *
+    {
+        margin-left: 30px;
+    }
+
+    .search_result .product .info
+    {
+        max-width: calc(100% - 640px);
+    }
+
+    .search_result .product .buy
+    {
+        width: 260px;
+    }
+
+    .search_result .product .price
+    {
+        font-size: 24px;
+    }
+
+
+    .search_result .article .head > * + *
+    {
+        margin-top: 5px;
+    }
+
+    .search_result .article .name
+    {
+        line-height: 21px;
+    }
+
+    .search_result .article .desc
+    {
+        line-height: 26px;
+    }
+
+
+
+    /*---------------
+        Equipment
+    ---------------*/
+    .equipment .titles
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    .equipment .list .item
+    {
+        padding: 15px 20px;
+    }
+
+    .equipment .list .item > * + *
+    {
+        margin-left: 20px;
+    }
+
+    .equipment .list .item .name
+    {
+        line-height: 23px;
+    }
+
+    .equipment .list .item .price
+    {
+        font-size: 24px;
+    }
+
+    .equipment .list .item .price
+    {
+        width: 160px;
+    }
+
+
+
+    /*-------------------------
+        Equipment available
+    -------------------------*/
+    .equipment_available .titles
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .equipment_available .col_available
+    {
+        display: none;
+    }
+
+    .equipment_available .col_info
+    {
+        width: calc(100% - 500px);
+    }
+
+    .equipment_available .product .col_price
+    {
+        width: 200px;
+    }
+
+    .equipment_available .product .row
+    {
+        display: block;
+    }
+
+    .equipment_available .product .price
+    {
+        font-size: 24px;
+    }
+
+    .equipment_available .product .available
+    {
+        line-height: 22px;
+
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+
+    /*---------------------
+        Payment methods
+    ---------------------*/
+    .payment_methods .method
+    {
+        line-height: 23px;
+    }
+
+    .payment_methods .method .desc
+    {
+        margin-top: 5px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .info
+    {
+        line-height: 26px;
+    }
+
+    .contacts_info .info .title
+    {
+        margin-bottom: 5px;
+    }
+
+
+
+    /*----------
+        Cert
+    ----------*/
+    .certs .row
+    {
+        margin-bottom: -30px;
+        margin-left: -30px;
+    }
+
+    .certs .row > *
+    {
+        width: calc(33.333% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row > *
+    {
+        width: calc(50% - 30px);
+    }
+
+
+    .products .product
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .products .product .info
+    {
+        padding: 20px;
+    }
+
+    .products .product .details
+    {
+        height: 60px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .list
+    {
+        column-gap: 20px;
+    }
+
+    .catalog .list > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .catalog .cat
+    {
+        padding: 25px;
+    }
+
+    .catalog .cat .main .thumb
+    {
+        width: calc(40% - 10px);
+    }
+
+    .catalog .cat .main .name
+    {
+        width: calc(60% - 10px);
+    }
+
+    .catalog .cat .sub_cats > *
+    {
+        margin-top: 15px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -40px;
+        margin-left: -40px;
+        padding-top: 0;
+    }
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 40px);
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+
+    .articles .list .article .head > * + *
+    {
+        margin-top: 5px;
+    }
+
+    .articles .list .article .name
+    {
+        line-height: 23px;
+    }
+
+    .articles .list .article .desc
+    {
+        line-height: 26px;
+    }
+
+
+
+    /*-----------------
+        Kind of car
+    -----------------*/
+    .kind_of_car
+    {
+        padding-left: 25px;
+    }
+
+    .kind_of_car .info
+    {
+        width: calc(56.2% - 30px);
+    }
+
+    .kind_of_car .list > * + *
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data
+    {
+        padding: 0 0 0 30px;
+    }
+
+
+    .product_info .tabs button
+    {
+        padding: 15px 30px;
+    }
+
+    .product_info .tab_content.active
+    {
+        padding: 30px;
+    }
+
+
+
+    .prod_features
+    {
+        column-gap: 30px;
+    }
+
+    .prod_features .item .name
+    {
+        width: 220px;
+    }
+
+    .prod_features .item .val
+    {
+        width: calc(100% - 220px);
+    }
+
+
+
+    .prod_options
+    {
+        margin: -30px;
+    }
+
+    .prod_options .option .info
+    {
+        max-width: calc(100% - 600px);
+    }
+
+    .prod_options .option .price
+    {
+        width: 240px;
+    }
+
+
+
+    /*---------------
+        Cats info
+    ---------------*/
+    .cats_info .title
+    {
+        font-size: 43px;
+        line-height: 53px;
+    }
+
+
+    .cats_info .desc
+    {
+        line-height: 26px;
+    }
+
+
+
+    /*-------------
+        Dealers
+    -------------*/
+    .dealers .slider
+    {
+        width: calc(100% - 250px);
+    }
+
+
+    .dealers .dealer_info .map
+    {
+        width: calc(100% - 290px);
+        min-height: 360px;
+    }
+
+    .dealers .dealer_info .info
+    {
+        line-height: 30px;
+
+        width: 290px;
+        padding: 25px;
+    }
+
+    .dealers .dealer_info .info .name
+    {
+        font-size: 23px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .dealers .list
+    {
+        width: 220px;
+    }
+}

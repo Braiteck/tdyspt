@@ -1,0 +1,125 @@
+@media (max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 260px;
+        --font_size: 16px;
+        --font_size_title: 32px;
+    }
+
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 30px);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    #search_modal
+    {
+        width: calc(100% + 20px);
+    }
+
+    header .search .input
+    {
+        font-size: 28px;
+    }
+
+
+    header .contacts
+    {
+        margin: 0 auto;
+    }
+
+    header .contacts > * + *
+    {
+        margin-top: 0;
+    }
+
+
+    header .callback_btn
+    {
+        position: relative;
+        left: 0;
+
+        margin-right: -20px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .links a
+    {
+        padding-left: 20px;
+    }
+
+    aside .links a:before
+    {
+        left: 0;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .cont > * + *
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 27px;
+    }
+
+    .text_block > *,
+    .text_block .cols .col > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*--------------
+        Callback
+    --------------*/
+    .callback_block .head
+    {
+        margin-bottom: 30px;
+    }
+
+    .callback_block .head .title
+    {
+        font-size: 24px;
+    }
+
+    .callback_block .head .desc
+    {
+        margin-top: 3px;
+    }
+
+
+
+    /*-------------------
+        Search result
+    -------------------*/
+    .search_result .search_form .input
+    {
+        font-size: 26px;
+    }
+}

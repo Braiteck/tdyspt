@@ -1,0 +1,957 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 27px;
+    }
+
+
+
+    .block
+    {
+        margin-bottom: 50px;
+    }
+
+    .block.bg
+    {
+        padding: 50px 0;
+    }
+
+
+
+    .owl-dots
+    {
+        bottom: 15px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        background: #fff;
+    }
+
+    header.no_shadow,
+    header.no_shadow .logo:before
+    {
+        box-shadow: 0 0 16px 0 rgba(221, 221, 221, .8);
+    }
+
+
+    header .logo
+    {
+        position: relative;
+        left: 0;
+
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    header .logo:before
+    {
+        right: -20px;
+    }
+
+
+    header .info
+    {
+        width: 100%;
+
+        background: none;
+    }
+
+    header .contacts
+    {
+        position: relative;
+        left: -10px;
+
+        margin-right: auto;
+    }
+
+
+
+    header .search .link
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    header .search .link img
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    header .search .input
+    {
+        font-size: 22px;
+
+        padding-right: 177px;
+    }
+
+    header .search .close
+    {
+        right: 130px;
+    }
+
+    header .search .submit_btn
+    {
+        width: 120px;
+    }
+
+
+    header .callback_btn
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    header .callback_btn img
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    header .menu_link
+    {
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+    }
+
+
+
+    header .menu .item > a
+    {
+        font-size: 17px;
+
+        padding: 5px 0;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .links > * + *
+    {
+        margin-top: 10px;
+    }
+
+    aside .links a:before
+    {
+        top: 2px;
+    }
+
+
+    aside .mob_filter_btn
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title
+    {
+        line-height: 31px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        font-size: 20px;
+
+        padding: 0 20px 4px;
+    }
+
+    .form .nice-select .current
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 24px;
+    }
+
+    .text_block h3
+    {
+        line-height: 24px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: 100%;
+    }
+
+    .text_block .cols .col + .col
+    {
+        margin-top: 30px;
+    }
+
+
+    .text_block .cols.bg:before
+    {
+        width: calc(100% - 40px);
+        height: 5px;
+    }
+
+    .text_block .cols.bg .col + .col
+    {
+        margin-top: 50px;
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        line-height: 22px;
+
+        padding-left: 20px;
+    }
+
+    .text_block blockquote br,
+    .text_block q br
+    {
+        display: none;
+    }
+
+
+    .text_block .cols,
+    .text_block .equipment,
+    .text_block .garanti,
+    .text_block .payment_methods,
+    .text_block blockquote
+    {
+        margin: 30px 0;
+    }
+
+
+
+    /*--------------
+        Callback
+    --------------*/
+    .callback_block .head .desc
+    {
+        line-height: 20px;
+
+        margin-top: 5px;
+    }
+
+
+    .callback_block .form .line
+    {
+        width: calc(100% - 155px);
+    }
+
+    .callback_block .form .submit
+    {
+        width: 140px;
+    }
+
+
+
+    /*-------------
+        Garanti
+    -------------*/
+    .garanti
+    {
+        min-height: 0;
+        padding: 20px;
+
+        border-left: 7px solid #de2e24;
+    }
+
+    .garanti .icon
+    {
+        position: relative;
+        top: 0;
+
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 0;
+
+        border: none;
+
+        justify-content: flex-start;
+    }
+
+    .garanti .icon img
+    {
+        height: 60px !important;
+    }
+
+
+
+    /*-------------------
+        Search result
+    -------------------*/
+    .search_result .search_form .input
+    {
+        font-size: 20px;
+
+        padding-right: 197px;
+        padding-left: 20px;
+    }
+
+    .search_result .search_form .clear_btn
+    {
+        right: 130px;
+    }
+
+    .search_result .search_form .submit_btn
+    {
+        width: 120px;
+    }
+
+
+
+    .search_result .product > * + *
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .search_result .product .thumb
+    {
+        width: 320px;
+        padding-bottom: 220px;
+    }
+
+    .search_result .product .info
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .search_result .product .desc,
+    .search_result .product .details
+    {
+        line-height: 22px;
+
+        margin-top: 10px;
+    }
+
+    .search_result .product .buy
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .search_result .article .head
+    {
+        padding-left: 62px;
+    }
+
+
+
+    /*---------------
+        Equipment
+    ---------------*/
+    .equipment .list .item .price
+    {
+        font-size: 22px;
+
+        width: 140px;
+    }
+
+
+
+    /*-------------------------
+        Equipment available
+    -------------------------*/
+    .equipment_available .links
+    {
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        width: calc(100% + 30px);
+        margin-bottom: 10px;
+        margin-left: -30px;
+    }
+
+    .equipment_available .links > *
+    {
+        margin-left: 30px !important;
+    }
+
+
+    .equipment_available .col_left
+    {
+        width: 100%;
+    }
+
+    .equipment_available .product .thumb
+    {
+        padding-bottom: 62%;
+    }
+
+    .equipment_available .product .number
+    {
+        line-height: 20px;
+
+        min-height: 0;
+
+        text-align: left;
+
+        justify-content: flex-start;
+    }
+
+    .equipment_available .product .col_info
+    {
+        width: 100%;
+        padding: 5px 20px 20px;
+    }
+
+    .equipment_available .product .col_price
+    {
+        width: 100%;
+    }
+
+    .equipment_available .product .row
+    {
+        padding: 20px;
+    }
+
+    .equipment_available .product .row:first-child
+    {
+        padding-top: 0;
+    }
+
+
+
+    /*---------------------
+        Payment methods
+    ---------------------*/
+    .payment_methods .method
+    {
+        line-height: 22px;
+
+        min-height: 45px;
+        padding-left: 75px;
+    }
+
+    .payment_methods .method .icon
+    {
+        width: 55px;
+        height: 45px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .columns2,
+    .contacts_info .columns4
+    {
+        column-gap: 20px;
+        column-count: 2;
+    }
+
+    .contacts_info .columns2
+    {
+        column-count: 1;
+    }
+
+    .contacts_info .columns2 > * + *,
+    .contacts_info .columns4 > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .contacts_info .info
+    {
+        line-height: 22px;
+    }
+
+    .contacts_info .info .title
+    {
+        line-height: 20px;
+
+        margin-bottom: 8px;
+    }
+
+
+
+    /*----------
+        Cert
+    ----------*/
+    .certs .group .name
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .certs .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .certs .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row > *
+    {
+        width: calc(100% - 30px);
+    }
+
+
+    .products .slider
+    {
+        padding: 0 100px 0 0;
+    }
+
+    .products .owl-item
+    {
+        visibility: visible;
+
+        opacity: 1;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .list
+    {
+        column-gap: 0;
+        column-count: 1;
+    }
+
+
+    .catalog .cat .more_link
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-left: -20px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(50% - 20px);
+        margin-left: 20px;
+    }
+
+
+
+    .articles .list .article + .article
+    {
+        margin-top: 40px;
+    }
+
+    .articles .list .article .head
+    {
+        padding-left: 62px;
+    }
+
+    .articles .list .article .name
+    {
+        line-height: 21px;
+    }
+
+    .articles .list .article .desc
+    {
+        line-height: 24px;
+    }
+
+
+    .articles .list .article .thumb
+    {
+        float: none;
+
+        margin-bottom: 15px;
+        padding-bottom: 37%;
+    }
+
+    .articles .list .article .thumb ~ .date,
+    .articles .list .article .thumb ~ .name
+    {
+        float: none;
+
+        width: 100%;
+    }
+
+
+
+    /*-------------
+        Article
+    -------------*/
+    .article_info .page_title
+    {
+        line-height: 32px;
+    }
+
+
+
+    /*-----------------
+        Kind of car
+    -----------------*/
+    .kind_of_car
+    {
+        padding-left: 20px;
+    }
+
+    .kind_of_car .info
+    {
+        width: 100%;
+    }
+
+    .kind_of_car .title
+    {
+        line-height: 23px;
+
+        margin-bottom: 20px;
+    }
+
+    .kind_of_car .list > * + *
+    {
+        margin-top: 7px;
+    }
+
+
+    .kind_of_car img
+    {
+        width: auto;
+        margin-top: 25px;
+    }
+
+
+
+    /*------------------
+        Garanti info
+    ------------------*/
+    .garanti_info .info
+    {
+        width: 100%;
+    }
+
+
+    .garanti_info .brands
+    {
+        display: flex;
+
+        width: 100%;
+        margin-top: 30px;
+
+        order: 2;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .garanti_info .brands .title
+    {
+        line-height: 23px;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .garanti_info .brands .brand
+    {
+        line-height: 22px;
+
+        width: calc(50% - 10px);
+    }
+
+    .garanti_info .brands .brand + .brand
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        width: 100%;
+    }
+
+
+    .product_info .data
+    {
+        width: 100%;
+        margin-top: 25px;
+        padding: 0;
+    }
+
+
+    .product_info .tabs
+    {
+        font-size: 0;
+
+        display: block;
+        overflow: auto;
+
+        white-space: nowrap;
+    }
+
+    .product_info .tabs button
+    {
+        font-size: calc(var(--font_size) + 2px);
+
+        display: inline-block;
+
+        min-height: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+
+
+    .prod_features .item
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        padding: 9px 10px 10px;
+    }
+
+    .prod_features .item .name
+    {
+        font-weight: 700;
+
+        width: 100%;
+    }
+
+    .prod_features .item .val
+    {
+        width: 100%;
+        margin-top: 3px;
+    }
+
+
+
+    .prod_options .option
+    {
+        padding: 20px;
+    }
+
+    .prod_options .option > * + *
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .prod_options .option .thumb
+    {
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .prod_options .option .info,
+    .prod_options .option .price
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .prod_options .option .info
+    {
+        padding: 0;
+
+        order: 2;
+    }
+
+    .prod_options .option .price
+    {
+        font-size: 22px;
+
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+
+
+    /*---------------
+        Cats info
+    ---------------*/
+    .cats_info .title
+    {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .cats_info .desc
+    {
+        line-height: 24px;
+
+        margin-top: 20px;
+    }
+
+    .cats_info .details
+    {
+        line-height: 44px;
+
+        height: 44px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+
+
+    .dealers .dealer_info .info
+    {
+        line-height: 22px;
+
+        width: 100%;
+        padding: 20px 90px 20px 20px;
+    }
+
+    .dealers .dealer_info .info .name
+    {
+        font-size: 20px;
+
+        margin-bottom: 8px;
+    }
+
+    .dealers .dealer_info .info > * + *
+    {
+        margin-top: 8px;
+    }
+
+
+    .dealers .dealer_info .map
+    {
+        width: 100%;
+        min-height: 260px;
+    }
+
+
+    .dealers .owl-carousel .owl-nav button
+    {
+        bottom: 20px;
+    }
+
+    .dealers .owl-carousel .owl-nav button.owl-prev
+    {
+        right: 55px;
+    }
+
+    .dealers .owl-carousel .owl-nav button.owl-next
+    {
+        right: 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts
+    {
+        margin-bottom: 0;
+        margin-left: -20px;
+    }
+
+    footer .contacts > *
+    {
+        margin-left: 20px;
+    }
+
+    footer .contacts .title
+    {
+        width: calc(100% + 20px);
+        margin-left: 20px;
+    }
+
+
+
+    footer .links
+    {
+        display: none;
+
+        width: calc(50% - 10px);
+        margin-top: 20px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 20px;
+    }
+
+    .fancybox-slide--html .fancybox-close-small
+    {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+
+
+
+    .modal
+    {
+        width: 500px;
+        padding: 40px 50px;
+    }
+
+    .modal_title
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+
+    .modal .or_call .numbers
+    {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}

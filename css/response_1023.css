@@ -1,0 +1,572 @@
+@media (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .search .input
+    {
+        padding-right: 207px;
+    }
+
+    header .search .close
+    {
+        right: 150px;
+    }
+
+    header .search .submit_btn
+    {
+        width: 140px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    aside .links
+    {
+        padding: 20px;
+
+        background: #fff;
+        box-shadow: 0 0 16px 0 rgba(178, 179, 184, .8);
+    }
+
+
+    aside .mob_filter_btn
+    {
+        display: inline-block;
+    }
+
+
+    aside .filter
+    {
+        display: none;
+
+        margin-top: 10px;
+        padding: 20px 25px 25px;
+
+        background: #fff;
+        box-shadow: 0 0 16px 0 rgba(178, 179, 184, .8);
+    }
+
+    aside .filter .item + .item
+    {
+        margin-top: 5px;
+        padding-top: 5px;
+    }
+
+    aside .filter .data
+    {
+        padding-top: 5px;
+    }
+
+    aside .filter .field + .field
+    {
+        margin-top: 10px;
+    }
+
+    aside .filter .submit > * + *
+    {
+        margin-top: 0;
+        margin-left: 25px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 25px;
+    }
+
+    .block_head .all_link
+    {
+        margin-left: 60px;
+    }
+
+
+
+    /*-------------------
+        Search result
+    -------------------*/
+    .search_result .search_form .input
+    {
+        font-size: 22px;
+
+        padding-right: 217px;
+        padding-left: 25px;
+    }
+
+    .search_result .search_form .clear_btn
+    {
+        right: 150px;
+    }
+
+    .search_result .search_form .submit_btn
+    {
+        width: 140px;
+    }
+
+
+
+    .search_result .product .thumb
+    {
+        width: 280px;
+        padding-bottom: 170px;
+    }
+
+    .search_result .product .info
+    {
+        width: calc(100% - 310px);
+        max-width: calc(100% - 310px);
+    }
+
+    .search_result .product .buy
+    {
+        width: calc(100% - 310px);
+        margin-top: 20px;
+        margin-left: auto;
+    }
+
+    .search_result .product .availability
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .search_result .product .hinged_equipment
+    {
+        line-height: 22px;
+
+        margin-top: 15px;
+    }
+
+    .search_result .product .get_price_btn
+    {
+        line-height: 40px;
+
+        height: 44px;
+        margin-top: 20px;
+        padding: 0 20px 2px;
+    }
+
+
+
+    .search_result .pagination
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*-------------------------
+        Equipment available
+    -------------------------*/
+    .equipment_available .titles
+    {
+        display: none;
+    }
+
+
+    .equipment_available .col_left
+    {
+        width: 280px;
+    }
+
+    .equipment_available .col_info
+    {
+        width: calc(100% - 280px);
+    }
+
+
+    .equipment_available .product .thumb
+    {
+        padding-bottom: 170px;
+    }
+
+    .equipment_available .product .number
+    {
+        line-height: 22px;
+
+        min-height: 60px;
+    }
+
+    .equipment_available .product .col_info
+    {
+        padding: 15px 25px 0;
+    }
+
+    .equipment_available .product .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .equipment_available .product .col_price
+    {
+        width: calc(100% - 305px);
+        margin-left: auto;
+    }
+
+    .equipment_available .product .row
+    {
+        display: flex;
+
+        padding: 20px 25px 20px 0;
+    }
+
+    .equipment_available .product .price
+    {
+        font-size: 22px;
+    }
+
+    .equipment_available .product .available
+    {
+        line-height: 20px;
+
+        width: 175px;
+        margin-top: 0;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .columns2,
+    .contacts_info .columns4
+    {
+        column-gap: 20px;
+        column-count: 3;
+    }
+
+    .contacts_info .columns2
+    {
+        column-count: 2;
+    }
+
+
+    .contacts_info .info .title
+    {
+        line-height: 21px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .product .price
+    {
+        font-size: 23px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .cat
+    {
+        padding: 20px;
+    }
+
+    .catalog .cat .main
+    {
+        line-height: 23px;
+    }
+
+    .catalog .cat .sub_cats
+    {
+        line-height: 21px;
+
+        margin-top: 20px;
+    }
+
+    .catalog .cat .sub_cats > *
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*-------------
+        Article
+    -------------*/
+    .article_info .page_title
+    {
+        line-height: 36px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data
+    {
+        padding: 0 0 0 20px;
+    }
+
+    .product_info .data .price
+    {
+        font-size: 23px;
+    }
+
+    .product_info .data .hinged_equipment
+    {
+        line-height: 22px;
+
+        margin-top: 15px;
+    }
+
+    .product_info .data .get_price_btn
+    {
+        line-height: 40px;
+
+        height: 44px;
+        margin-top: 20px;
+        padding: 0 20px 2px;
+    }
+
+    .product_info .data .model
+    {
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+    .product_info .data .features_btn
+    {
+        display: none;
+    }
+
+
+
+    .product_info .tabs button
+    {
+        padding: 15px 20px;
+    }
+
+    .product_info .tab_content.active
+    {
+        padding: 20px;
+    }
+
+
+
+    .prod_features
+    {
+        column-gap: 0;
+        column-count: 1;
+    }
+
+    .prod_features .item .name
+    {
+        width: 250px;
+    }
+
+    .prod_features .item .val
+    {
+        width: calc(100% - 250px);
+    }
+
+
+
+    .prod_options
+    {
+        margin: -20px;
+    }
+
+    .prod_options .option
+    {
+        position: relative;
+
+        padding: 20px 0;
+    }
+
+    .prod_options .option .thumb
+    {
+        width: 280px;
+    }
+
+    .prod_options .option .info
+    {
+        padding-top: 47px;
+    }
+
+    .prod_options .option .info,
+    .prod_options .option .price
+    {
+        width: calc(100% - 310px);
+        max-width: calc(100% - 310px);
+    }
+
+    .prod_options .option .price
+    {
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+
+    .prod_options .option .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        margin-top: 15px;
+    }
+
+
+
+    /*---------------
+        Cats info
+    ---------------*/
+    .cats_info .tabs
+    {
+        margin-bottom: 25px;
+    }
+
+
+    .cats_info .title
+    {
+        font-size: 38px;
+        line-height: 44px;
+
+        width: 100%;
+    }
+
+    .cats_info .desc
+    {
+        line-height: 25px;
+
+        width: 100%;
+        margin-top: 25px;
+    }
+
+
+
+    /*-------------
+        Dealers
+    -------------*/
+    .dealers .slider
+    {
+        width: 100%;
+    }
+
+    .dealers .list
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -30px;
+        margin-left: -30px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+
+    .articles .row .article .name
+    {
+        line-height: 21px;
+    }
+
+    .articles .row .article > * + *
+    {
+        margin-top: 15px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts
+    {
+        display: flex;
+
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: -30px;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer .contacts > *
+    {
+        margin-bottom: 5px;
+        margin-left: 30px;
+    }
+
+    footer .contacts .title
+    {
+        width: calc(100% + 30px);
+        margin-left: 30px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 30px;
+    }
+
+
+
+    .modal
+    {
+        width: 540px;
+        padding: 40px 80px 50px;
+    }
+
+    .modal_title
+    {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .modal_desc
+    {
+        line-height: 20px;
+
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,363 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .search .input
+    {
+        font-size: 20px;
+
+        padding-right: 152px;
+    }
+
+    header .search .close
+    {
+        right: 105px;
+    }
+
+    header .search .submit_btn
+    {
+        width: 95px;
+        padding: 0 20px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .mob_filter_btn
+    {
+        font-size: 17px;
+
+        padding: 12px 20px;
+    }
+
+
+    aside .filter
+    {
+        padding: 15px 20px 20px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title
+    {
+        line-height: 29px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        padding-bottom: 0;
+    }
+
+
+
+    /*--------------
+        Callback
+    --------------*/
+    .callback_block .head .title
+    {
+        font-size: 20px;
+    }
+
+    .callback_block .head .desc
+    {
+        line-height: 18px;
+
+        margin-top: 3px;
+    }
+
+
+    .callback_block .form .line
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .callback_block .form .submit
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        Search result
+    -------------------*/
+    .search_result .search_form .input
+    {
+        font-size: 20px;
+
+        height: 55px;
+        padding-right: 55px;
+        padding-bottom: 0;
+    }
+
+    .search_result .search_form .clear_btn
+    {
+        top: 4px;
+        right: 0;
+        bottom: auto;
+    }
+
+    .search_result .search_form .submit_btn
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        width: 100%;
+        padding: 0 20px;
+    }
+
+
+    .search_result .product .price
+    {
+        font-size: 22px;
+    }
+
+
+    .search_result .article .name
+    {
+        line-height: 20px;
+    }
+
+    .search_result .article .desc
+    {
+        line-height: 24px;
+    }
+
+
+
+    /*---------------
+        Equipment
+    ---------------*/
+    .equipment .titles
+    {
+        display: none;
+    }
+
+
+    .equipment .title
+    {
+        width: 100%;
+    }
+
+    .equipment .download_link
+    {
+        margin-left: 0;
+    }
+
+
+    .equipment .list .item .name
+    {
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .equipment .list .item .price
+    {
+        font-size: 20px;
+
+        white-space: nowrap;
+    }
+
+    .equipment .list .item .price .currency
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------------------
+        Equipment available
+    -------------------------*/
+    .equipment_available .product .price
+    {
+        font-size: 20px;
+
+        width: auto;
+    }
+
+    .equipment_available .product .price .currency
+    {
+        font-size: 20px;
+    }
+
+    .equipment_available .product .available
+    {
+        width: auto;
+        margin-left: auto;
+    }
+
+
+
+    /*---------------------
+        Payment methods
+    ---------------------*/
+    .payment_methods .method
+    {
+        line-height: 20px;
+
+        min-height: 35px;
+        padding-left: 65px;
+    }
+
+    .payment_methods .method .icon
+    {
+        width: 50px;
+        height: 35px;
+
+        justify-content: center;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .articles .list .article .thumb
+    {
+        padding-bottom: 50%;
+    }
+
+
+
+    /*-------------
+        Article
+    -------------*/
+    .article_info .page_title
+    {
+        line-height: 28px;
+    }
+
+
+
+    /*-----------------
+        Kind of car
+    -----------------*/
+    .kind_of_car .info
+    {
+        line-height: 20px;
+    }
+
+
+
+    /*------------------
+        Garanti info
+    ------------------*/
+    .garanti_info .brands .brand
+    {
+        line-height: 20px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .thumbs
+    {
+        margin-top: 15px;
+        padding: 0 25px;
+    }
+
+    .product_info .images .thumbs .slide button:before
+    {
+        border-width: 2px;
+    }
+
+
+
+    .prod_options .option .name
+    {
+        line-height: 22px;
+
+        padding-left: 38px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .slider
+    {
+        padding: 0 40px 0 0;
+    }
+
+
+    .products .product .availability,
+    .products .product .price.refine
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    /*---------------
+        Cats info
+    ---------------*/
+    .cats_info .title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .cats_info .title br
+    {
+        display: none;
+    }
+
+
+    /*-------------
+        Dealers
+    -------------*/
+    .dealers .dealer_info .info .name
+    {
+        font-size: 19px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px 35px;
+    }
+
+
+    .modal_data img
+    {
+        margin: 30px auto 10px;
+    }
+}
