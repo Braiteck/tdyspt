@@ -108,8 +108,14 @@
     }
 
 
+    header .menu .sub_menu.level2
+    {
+        left: 0;
+    }
+
     header .menu .item .sub_menu,
-    header .menu .item:hover .sub_menu
+    header .menu .item:hover > .sub_menu,
+    header .menu .sub_menu > *:hover > .sub_menu.level2
     {
         position: relative;
         top: 0;
@@ -126,12 +132,15 @@
         opacity: 1;
     }
 
-    header .menu .item > a.touch_link + .sub_menu.show
+    header .menu .item > a.touch_link + .sub_menu.show,
+    header .menu .sub_menu > * a.touch_link + .sub_menu.level2.show
     {
         top: 0;
+        left: 0;
 
         display: block;
     }
+
 
     header .menu .sub_menu a
     {
@@ -421,6 +430,14 @@
         font-size: 24px;
     }
 
+    .equipment_available .product .price .mounted
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        margin-top: 12px;
+    }
+
     .equipment_available .product .available
     {
         line-height: 22px;
@@ -452,6 +469,16 @@
     .contacts_info .info
     {
         line-height: 26px;
+
+        margin-bottom: -40px;
+        margin-left: -60px;
+    }
+
+    .contacts_info .col
+    {
+        width: calc(50% - 60px);
+        margin-bottom: 40px;
+        margin-left: 60px;
     }
 
     .contacts_info .info .title
@@ -538,6 +565,36 @@
     .catalog .cat .sub_cats > *
     {
         margin-top: 15px;
+    }
+
+
+
+    /*------------------
+        Catalog cats
+    ------------------*/
+    .catalog_cats .row
+    {
+        margin-bottom: -30px;
+        margin-left: -20px;
+    }
+
+    .catalog_cats .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+
+    .catalog_cats .cat
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .catalog_cats .cat .info
+    {
+        padding: 25px 25px 30px;
     }
 
 

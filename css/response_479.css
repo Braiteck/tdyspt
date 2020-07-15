@@ -50,6 +50,29 @@
         padding: 15px 20px 20px;
     }
 
+    aside .filter .submit > * + *
+    {
+        margin-left: auto;
+    }
+
+    aside .filter .submit_btn
+    {
+        font-size: calc(var(--font_size) + 1px);
+        line-height: 40px;
+
+        height: 42px;
+        padding: 0 15px 2px;
+    }
+
+    aside .filter .reset_btn
+    {
+        font-size: calc(var(--font_size) + 1px);
+        line-height: 38px;
+
+        height: 42px;
+        padding: 0 15px 2px;
+    }
+
 
 
     /*---------------
@@ -199,9 +222,15 @@
         width: auto;
     }
 
-    .equipment_available .product .price .currency
+    .equipment_available .product .price > .currency
     {
         font-size: 20px;
+    }
+
+    .equipment_available .product .price .mounted
+    {
+        font-size: 15px;
+        line-height: 19px;
     }
 
     .equipment_available .product .available
@@ -320,6 +349,14 @@
         line-height: 20px;
     }
 
+    .products .product .price .mounted
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        margin-top: 5px;
+    }
+
 
 
     /*---------------
@@ -337,12 +374,42 @@
     }
 
 
+
     /*-------------
         Dealers
     -------------*/
     .dealers .dealer_info .info .name
     {
         font-size: 19px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .info .title
+    {
+        margin-bottom: 3px;
+    }
+
+
+
+    /*------------------
+        Catalog cats
+    ------------------*/
+    .catalog_cats .cat .info
+    {
+        padding: 20px 20px 25px;
+    }
+
+    .catalog_cats .cat .details
+    {
+        line-height: 42px;
+
+        height: 42px;
+        margin-top: 20px;
+        padding: 0 20px;
     }
 
 

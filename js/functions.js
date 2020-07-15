@@ -216,15 +216,16 @@ $(() => {
 
 
 	if (is_touch_device()) {
-		$('header .menu .item > a.sub_link').addClass('touch_link')
+		$('header .menu .item a.sub_link').addClass('touch_link')
 
-		$('header .menu .item > a.sub_link').click(function(e) {
-			const $dropdown = $(this).next()
+		$('header .menu .item a.sub_link').click(function(e) {
+			let $dropdown = $(this).next(),
+				$parent = $(this).parent()
 
 			if ($dropdown.css('visibility') === 'hidden') {
 				e.preventDefault()
 
-				$('header .menu .sub_menu').removeClass('show')
+				$parent.find('.sub_menu').removeClass('show')
 				$dropdown.addClass('show')
 			}
 		})

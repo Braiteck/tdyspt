@@ -412,7 +412,7 @@
         padding-bottom: 62%;
     }
 
-    .equipment_available .product .number
+    .equipment_available .product .year
     {
         line-height: 20px;
 
@@ -468,25 +468,6 @@
     /*-------------------
         Contacts info
     -------------------*/
-    .contacts_info .columns2,
-    .contacts_info .columns4
-    {
-        column-gap: 20px;
-        column-count: 2;
-    }
-
-    .contacts_info .columns2
-    {
-        column-count: 1;
-    }
-
-    .contacts_info .columns2 > * + *,
-    .contacts_info .columns4 > * + *
-    {
-        margin-top: 20px;
-    }
-
-
     .contacts_info .info
     {
         line-height: 22px;
@@ -561,6 +542,22 @@
     .catalog .cat .more_link
     {
         font-size: 15px;
+    }
+
+
+
+    /*------------------
+        Catalog cats
+    ------------------*/
+    .catalog_cats .row > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .catalog_cats .cat .desc
+    {
+        margin-top: 15px;
     }
 
 

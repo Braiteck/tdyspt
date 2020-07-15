@@ -203,11 +203,14 @@
         padding-bottom: 170px;
     }
 
+    .equipment_available .product .year
+    {
+        min-height: 50px;
+    }
+
     .equipment_available .product .number
     {
         line-height: 22px;
-
-        min-height: 60px;
     }
 
     .equipment_available .product .col_info
@@ -240,6 +243,14 @@
         font-size: 22px;
     }
 
+    .equipment_available .product .price .mounted
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        margin-top: 10px;
+    }
+
     .equipment_available .product .available
     {
         line-height: 20px;
@@ -253,22 +264,40 @@
     /*-------------------
         Contacts info
     -------------------*/
-    .contacts_info .columns2,
-    .contacts_info .columns4
+    .contacts_info .info
     {
-        column-gap: 20px;
-        column-count: 3;
+        margin-left: 0;
     }
 
-    .contacts_info .columns2
+    .contacts_info .col
     {
-        column-count: 2;
+        width: 100%;
+        margin-left: 0;
     }
-
 
     .contacts_info .info .title
     {
         line-height: 21px;
+    }
+
+
+    .contacts_info .branch
+    {
+        margin-bottom: -20px;
+        margin-left: -60px;
+    }
+
+    .contacts_info .branch > *
+    {
+        max-width: calc(100% - 60px);
+        margin-bottom: 20px;
+        margin-left: 60px;
+    }
+
+    .contacts_info .branch .adres,
+    .contacts_info .branch .map
+    {
+        width: calc(100% - 60px);
     }
 
 
@@ -306,6 +335,16 @@
     .catalog .cat .sub_cats > *
     {
         margin-top: 10px;
+    }
+
+
+
+    /*------------------
+        Catalog cats
+    ------------------*/
+    .catalog_cats .row > *
+    {
+        width: calc(50% - 20px);
     }
 
 
