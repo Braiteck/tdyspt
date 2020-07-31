@@ -444,11 +444,6 @@
         padding: 20px 0;
     }
 
-    .prod_options .option .thumb
-    {
-        width: 280px;
-    }
-
     .prod_options .option .info
     {
         padding-top: 47px;
@@ -457,12 +452,14 @@
     .prod_options .option .info,
     .prod_options .option .price
     {
-        width: calc(100% - 310px);
-        max-width: calc(100% - 310px);
+        width: calc(100% - 230px);
+        max-width: calc(100% - 230px);
     }
 
     .prod_options .option .price
     {
+        font-size: 24px;
+
         position: absolute;
         top: 20px;
         right: 0;

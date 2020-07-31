@@ -509,6 +509,11 @@
     /*--------------
         Products
     --------------*/
+    .products .row
+    {
+        --products_count: 1;
+    }
+
     .products .row > *
     {
         width: calc(100% - 30px);
@@ -779,12 +784,6 @@
     {
         margin-top: 20px;
         margin-left: 0;
-    }
-
-    .prod_options .option .thumb
-    {
-        width: 300px;
-        max-width: 100%;
     }
 
     .prod_options .option .info,

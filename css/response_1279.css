@@ -229,6 +229,18 @@
     }
 
 
+    .page_title.padding
+    {
+        max-width: 100%;
+    }
+
+
+    .views
+    {
+        display: none;
+    }
+
+
 
     /*----------------
         Typography
@@ -509,6 +521,11 @@
     /*--------------
         Products
     --------------*/
+    .products .row
+    {
+        --products_count: 2;
+    }
+
     .products .row > *
     {
         width: calc(50% - 30px);
@@ -699,7 +716,15 @@
 
     .prod_options .option .info
     {
-        max-width: calc(100% - 600px);
+        width: calc(100% - 500px);
+    }
+
+    .prod_options .option .desc
+    {
+        font-size: 13px;
+        line-height: 21px;
+
+        margin-top: 12px;
     }
 
     .prod_options .option .price
