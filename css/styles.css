@@ -3933,10 +3933,30 @@ aside .filter .reset_btn:hover
     color: #333641;
     font-size: 15px;
     font-weight: 600;
-    line-height: 23px;
+    line-height: 21px;
 
-    margin-top: 5px;
+    margin-top: 7px;
     margin-left: -40px;
+}
+
+.products .product .price .mounted .old
+{
+    color: #de2e24;
+    font-size: 13px;
+
+    display: inline-block;
+
+    margin-right: 11px;
+
+    vertical-align: top;
+    text-decoration: line-through;
+}
+
+.products .product .price .mounted .new
+{
+    display: inline-block;
+
+    vertical-align: top;
 }
 
 .products .product .price .mounted .currency
