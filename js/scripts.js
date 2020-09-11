@@ -103,6 +103,7 @@ $(() => {
 		loop       : false,
 		smartSpeed : 500,
 		dots       : false,
+		autoHeight : false,
 		responsive : {
 	        0 : {
 	            nav : true

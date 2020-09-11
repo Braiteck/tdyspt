@@ -8,6 +8,7 @@ $(() => {
 
 	// Есть ли поддержка тач событий
 	if (is_touch_device()) $('html').addClass('touch_enable')
+	if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) $('html').addClass('safari')
 
 
 	// Ленивая загрузка

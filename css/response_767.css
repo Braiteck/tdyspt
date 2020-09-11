@@ -178,7 +178,7 @@
     {
         font-size: 20px;
 
-        padding: 0 20px 4px;
+        padding: 0 20px 2px;
     }
 
     .form .nice-select .current
@@ -264,12 +264,13 @@
 
     .callback_block .form .line
     {
-        width: calc(100% - 155px);
+        width: calc(50% - 10px);
     }
 
     .callback_block .form .submit
     {
-        width: 140px;
+        width: calc(50% - 10px);
+        margin-top: 15px;
     }
 
 

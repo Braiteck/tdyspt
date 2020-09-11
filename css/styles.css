@@ -2768,7 +2768,7 @@ aside .filter .reset_btn:hover
 
 .callback_block .form .line
 {
-    width: calc(100% - 170px);
+    width: calc((100% - 188px) / 2);
     margin: 0;
 }
 
@@ -3388,6 +3388,10 @@ aside .filter .reset_btn:hover
     background: var(--text_color);
 }
 
+.safari .equipment .list .item .price .currency{
+    line-height: 34px;
+}
+
 
 .equipment .list .item:hover
 {
@@ -3928,6 +3932,11 @@ aside .filter .reset_btn:hover
     background: var(--text_color);
 }
 
+.safari .products .product .price > .currency
+{
+    line-height: 34px;
+}
+
 .products .product .price .mounted
 {
     color: #333641;
@@ -4218,6 +4227,11 @@ aside .filter .reset_btn:hover
 
     border-radius: 50%;
     background: var(--text_color);
+}
+
+.safari .product_info .data .price .currency
+{
+    line-height: 34px;
 }
 
 
@@ -4716,6 +4730,11 @@ aside .filter .reset_btn:hover
     background: var(--text_color);
 }
 
+.safari .prod_options .option .price .currency
+{
+    line-height: 34;
+}
+
 
 
 /*-------------------
@@ -5061,6 +5080,11 @@ aside .filter .reset_btn:hover
 
     border-radius: 50%;
     background: var(--text_color);
+}
+
+.safari .search_result .product .price .currency
+{
+    line-height: 34px;
 }
 
 
@@ -5713,6 +5737,10 @@ aside .filter .reset_btn:hover
 
     border-radius: 50%;
     background: var(--text_color);
+}
+
+.safari .equipment_available .product .price > .currency{
+    line-height: 34px;
 }
 
 .equipment_available .product .price .mounted
