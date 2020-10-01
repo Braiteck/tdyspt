@@ -402,9 +402,33 @@
 
 
 
+    .product_info .tabs
+    {
+        font-size: 0;
+
+        display: block;
+        overflow: auto;
+
+        white-space: nowrap;
+    }
+
     .product_info .tabs button
     {
+        font-size: calc(var(--font_size) + 2px);
+
+        display: inline-block;
+
+        min-height: 0;
         padding: 15px 20px;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .product_info .tabs button:before,
+    .product_info .tabs button span:after
+    {
+        display: none;
     }
 
     .product_info .tab_content.active
@@ -435,6 +459,11 @@
     .prod_options
     {
         margin: -20px;
+    }
+
+    .prod_options .title
+    {
+        padding: 15px 20px;
     }
 
     .prod_options .option

@@ -3364,6 +3364,7 @@ aside .filter .reset_btn:hover
     position: relative;
 
     width: 210px;
+    min-width: 210px;
     padding-left: 40px;
 }
 
@@ -3388,7 +3389,8 @@ aside .filter .reset_btn:hover
     background: var(--text_color);
 }
 
-.safari .equipment .list .item .price .currency{
+.safari .equipment .list .item .price .currency
+{
     line-height: 34px;
 }
 
@@ -3407,6 +3409,7 @@ aside .filter .reset_btn:hover
 .equipment .col_price
 {
     width: 160px;
+    min-width: 160px;
 }
 
 
@@ -4575,6 +4578,24 @@ aside .filter .reset_btn:hover
     margin: -40px;
 }
 
+
+.prod_options .title
+{
+    font-size: calc(var(--font_size) + 4px);
+    font-weight: 800;
+    line-height: 25px;
+
+    padding: 20px 30px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.prod_options * + .title
+{
+    margin-top: 30px;
+}
+
+
 .prod_options input[type=checkbox]
 {
     display: none;
@@ -4584,9 +4605,11 @@ aside .filter .reset_btn:hover
 {
     display: flex;
 
-    padding: 30px 0;
+    padding: 15px 0;
 
     cursor: pointer;
+
+    border-bottom: 1px solid #ddd;
 
     justify-content: flex-start;
     align-items: flex-start;
@@ -4594,9 +4617,9 @@ aside .filter .reset_btn:hover
     flex-wrap: wrap;
 }
 
-.prod_options .option ~ .option
+.prod_options .option:last-child
 {
-    border-top: 1px solid #ddd;
+    border: none;
 }
 
 .prod_options .option > * + *
@@ -4692,7 +4715,7 @@ aside .filter .reset_btn:hover
     font-weight: 600;
     line-height: 23px;
 
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -4732,7 +4755,18 @@ aside .filter .reset_btn:hover
 
 .safari .prod_options .option .price .currency
 {
-    line-height: 34;
+    line-height: 34px;
+}
+
+
+
+.prod_drawing
+{
+    display: block;
+
+    width: auto !important;
+    max-width: 100%;
+    height: auto !important;
 }
 
 
@@ -5739,7 +5773,8 @@ aside .filter .reset_btn:hover
     background: var(--text_color);
 }
 
-.safari .equipment_available .product .price > .currency{
+.safari .equipment_available .product .price > .currency
+{
     line-height: 34px;
 }
 
@@ -5768,6 +5803,11 @@ aside .filter .reset_btn:hover
 
     width: 170px;
     margin-top: 3px;
+}
+
+.equipment_available .product .available > * + *
+{
+    margin-top: 10px;
 }
 
 

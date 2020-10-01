@@ -399,11 +399,9 @@
     .equipment .list .item .price
     {
         font-size: 24px;
-    }
 
-    .equipment .list .item .price
-    {
         width: 160px;
+        min-width: 160px;
     }
 
 
