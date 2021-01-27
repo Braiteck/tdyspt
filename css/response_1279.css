@@ -202,6 +202,22 @@
 
 
 
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .steps .step
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    aside .steps .step:before
+    {
+        font-size: 24px;
+    }
+
+
+
     /*---------------
         Page head
     ---------------*/
@@ -783,5 +799,82 @@
     .dealers .list
     {
         width: 220px;
+    }
+
+
+
+    /*-----------------
+        Constructor
+    -----------------*/
+    .constructor
+    {
+        --sidebar_width: 337px;
+    }
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 30px);
+    }
+
+
+
+    .constructor .type .row > *
+    {
+        width: calc(100% - 20px);
+    }
+
+    .constructor .type .item
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        min-height: 90px;
+        padding: 10px 20px;
+    }
+
+
+    .constructor .features .head .title
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+
+    .constructor .product_info .info .price
+    {
+        font-size: 30px;
+    }
+
+
+    .constructor .product_info .attachments,
+    .constructor .product_info .delivery_time
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        margin-top: 20px;
+    }
+
+    .constructor .product_info .attachments .exp,
+    .constructor .product_info .delivery_time .exp
+    {
+        font-size: 14px;
+
+        margin-top: 5px;
+    }
+
+
+    .constructor .product_info .links .buy_btn
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .constructor .product_info .prod_features
+    {
+        margin-top: 35px;
+        padding: 25px;
     }
 }

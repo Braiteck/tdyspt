@@ -14,9 +14,9 @@ $(() => {
 	// Ленивая загрузка
 	setTimeout(() => {
 		observer = lozad('.lozad', {
-			rootMargin : '200px 0px',
-			threshold  : 0,
-			loaded     : (el) => el.classList.add('loaded')
+			rootMargin: '200px 0px',
+			threshold: 0,
+			loaded: (el) => el.classList.add('loaded')
 		})
 
 		observer.observe()
@@ -34,13 +34,13 @@ $(() => {
 	$('select').niceSelect()
 
 	// Фокус при клике на название поля
-	$('body').on('click', '.form .label', function() {
+	$('body').on('click', '.form .label', function () {
 		$(this).closest('.line').find('.input, textarea').focus()
 	})
 
 
 	// Мини всплывающие окна
-	$('.mini_modal_link').click(function(e) {
+	$('.mini_modal_link').click(function (e) {
 		e.preventDefault()
 
 		const modalId = $(this).data('modal-id')
@@ -81,46 +81,46 @@ $(() => {
 
 
 	// Fancybox
-	$.fancybox.defaults.hash             = false
-	$.fancybox.defaults.backFocus        = false
-	$.fancybox.defaults.autoFocus        = false
-	$.fancybox.defaults.animationEffect  = 'zoom'
+	$.fancybox.defaults.hash = false
+	$.fancybox.defaults.backFocus = false
+	$.fancybox.defaults.autoFocus = false
+	$.fancybox.defaults.animationEffect = 'zoom'
 	$.fancybox.defaults.transitionEffect = 'slide'
-	$.fancybox.defaults.speed            = 500
-	$.fancybox.defaults.gutter           = 40
-	$.fancybox.defaults.i18n             = {
+	$.fancybox.defaults.speed = 500
+	$.fancybox.defaults.gutter = 40
+	$.fancybox.defaults.i18n = {
 		'en': {
-			CLOSE       : "Закрыть",
-			NEXT        : "Следующий",
-			PREV        : "Предыдущий",
-			ERROR       : "Запрошенный контент не может быть загружен.<br /> Пожалуйста, повторите попытку позже.",
-			PLAY_START  : "Запустить слайдшоу",
-			PLAY_STOP   : "Остановить слайдшоу",
-			FULL_SCREEN : "На весь экран",
-			THUMBS      : "Миниатюры",
-			DOWNLOAD    : "Скачать",
-			SHARE       : "Поделиться",
-			ZOOM        : "Увеличить"
+			CLOSE: "Закрыть",
+			NEXT: "Следующий",
+			PREV: "Предыдущий",
+			ERROR: "Запрошенный контент не может быть загружен.<br /> Пожалуйста, повторите попытку позже.",
+			PLAY_START: "Запустить слайдшоу",
+			PLAY_STOP: "Остановить слайдшоу",
+			FULL_SCREEN: "На весь экран",
+			THUMBS: "Миниатюры",
+			DOWNLOAD: "Скачать",
+			SHARE: "Поделиться",
+			ZOOM: "Увеличить"
 		}
 	}
 
 	// Всплывающие окна
-	$('body').on('click', '.modal_link', function(e) {
+	$('body').on('click', '.modal_link', function (e) {
 		e.preventDefault()
 
 		$.fancybox.close(true)
 
 		$.fancybox.open({
-			src   : $(this).data('content'),
-			type  : 'inline',
-			touch : false
+			src: $(this).data('content'),
+			type: 'inline',
+			touch: false
 		})
 	})
 
 	// Увеличение картинки
 	$('.fancy_img').fancybox({
-		mobile : {
-			clickSlide : "close"
+		mobile: {
+			clickSlide: "close"
 		}
 	})
 
@@ -128,14 +128,14 @@ $(() => {
 	// Табы
 	var locationHash = window.location.hash
 
-	$('body').on('click', '.tabs button', function(e) {
+	$('body').on('click', '.tabs button', function (e) {
 		e.preventDefault()
 
 		if (!$(this).hasClass('active')) {
-			const $parent           = $(this).closest('.tabs_container'),
-				  activeTab         = $(this).data('content'),
-				  $activeTabContent = $(activeTab),
-				  level             = $(this).data('level')
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
 
 			$parent.find('.tabs:first button').removeClass('active')
 			$parent.find('.tab_content.' + level).removeClass('active')
@@ -146,10 +146,10 @@ $(() => {
 	})
 
 	if (locationHash && $('.tabs_container').length) {
-		const $activeTab        = $('.tabs button[data-content=' + locationHash + ']'),
-			  $activeTabContent = $(locationHash),
-			  $parent           = activeTab.closest('.tabs_container'),
-			  level             = activeTab.data('level')
+		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
+			$activeTabContent = $(locationHash),
+			$parent = activeTab.closest('.tabs_container'),
+			level = activeTab.data('level')
 
 		$parent.find('.tabs:first button').removeClass('active')
 		$parent.find('.tab_content.' + level).removeClass('active')
@@ -163,17 +163,17 @@ $(() => {
 
 	// Плавная прокрутка к якорю
 	// Работает и при прокрутке к табу
-	$('.scroll_link').click(function(e) {
+	$('.scroll_link').click(function (e) {
 		e.preventDefault()
 
-		const href      = $(this).data('anchor'),
-			  addOffset = 60
+		const href = $(this).data('anchor'),
+			addOffset = 60
 
 		if ($(this).data('offset')) addOffset = $(this).data('offset')
 
 		if ($('.tabs button[data-content="' + href + ']"').length) {
-			const $activeTab = $('.tabs button[data-content="'+ href +'"]'),
-				  $parent    = $activeTab.closest('.tabs_container')
+			const $activeTab = $('.tabs button[data-content="' + href + '"]'),
+				$parent = $activeTab.closest('.tabs_container')
 
 			$parent.find('> .tabs button, > .tab_content').removeClass('active')
 
@@ -219,7 +219,7 @@ $(() => {
 	if (is_touch_device()) {
 		$('header .menu .item a.sub_link').addClass('touch_link')
 
-		$('header .menu .item a.sub_link').click(function(e) {
+		$('header .menu .item a.sub_link').click(function (e) {
 			let $dropdown = $(this).next(),
 				$parent = $(this).parent()
 
@@ -248,7 +248,7 @@ $(window).resize(() => {
 const setHeight = (className) => {
 	let maxheight = 0
 
-	className.each(function() {
+	className.each(function () {
 		const elHeight = $(this).outerHeight()
 
 		if (elHeight > maxheight) maxheight = elHeight
@@ -264,9 +264,9 @@ const is_touch_device = () => !!('ontouchstart' in window)
 const widthScroll = () => {
 	let div = document.createElement('div')
 
-	div.style.overflowY  = 'scroll'
-	div.style.width      = '50px'
-	div.style.height     = '50px'
+	div.style.overflowY = 'scroll'
+	div.style.width = '50px'
+	div.style.height = '50px'
 	div.style.visibility = 'hidden'
 
 	document.body.appendChild(div)

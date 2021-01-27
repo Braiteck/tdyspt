@@ -428,6 +428,44 @@
 
 
 
+    /*-----------------
+        Constructor
+    -----------------*/
+    .constructor .type .title,
+    .constructor .features .block > .title
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .constructor .type .item
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 10px 15px;
+    }
+
+    .constructor .type .item .thumb
+    {
+        width: 110px;
+    }
+
+    .constructor .type .item .thumb + *
+    {
+        width: calc(100% - 125px);
+    }
+
+
+
+    .constructor .product_info .info .price
+    {
+        font-size: 28px;
+    }
+
+
+
     /*-----------
         PopUp
     -----------*/
@@ -440,5 +478,14 @@
     .modal_data img
     {
         margin: 30px auto 10px;
+    }
+
+
+
+    #buy_modal .modal_desc
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
 }

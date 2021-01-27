@@ -868,6 +868,92 @@
 
 
 
+    /*-----------------
+        Constructor
+    -----------------*/
+    .constructor .type .row
+    {
+        margin-bottom: -10px;
+    }
+
+    .constructor .type .row > *
+    {
+        margin-bottom: 10px;
+    }
+
+
+    .constructor .type .item
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    .constructor .features .cols .col
+    {
+        width: 100%;
+        max-width: 100%;
+
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .constructor .features .cols .col + .col
+    {
+        margin-top: -1px;
+    }
+
+
+    .constructor .features .back_link,
+    .constructor .features .next_link
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .constructor .features .error
+    {
+        width: 100%;
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+
+    .constructor .product_info > .title
+    {
+        font-size: 19px;
+        line-height: 23px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .constructor .product_info .image
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .constructor .product_info .info
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .constructor .product_info .prod_features
+    {
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

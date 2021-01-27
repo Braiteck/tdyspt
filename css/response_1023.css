@@ -10,6 +10,13 @@
 
 
 
+    .tablet_hide
+    {
+        display: none;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -571,6 +578,20 @@
     .articles .row .article > * + *
     {
         margin-top: 15px;
+    }
+
+
+
+    /*-----------------
+        Constructor
+    -----------------*/
+    .constructor .type .title,
+    .constructor .features .block > .title
+    {
+        font-size: 19px;
+        line-height: 23px;
+
+        margin-bottom: 20px;
     }
 
 
