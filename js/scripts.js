@@ -77,6 +77,42 @@ $(() => {
 	})
 
 
+	// Новости
+	$('.articles .slider').owlCarousel({
+		dots: true,
+		loop: false,
+		smartSpeed: 500,
+		dotsEach: true,
+		responsive: {
+			0: {
+				items: 1,
+				margin: 20,
+				nav: false
+			},
+			480: {
+				items: 2,
+				margin: 20,
+				nav: false
+			},
+			768: {
+				items: 3,
+				margin: 30,
+				nav: false
+			},
+			1024: {
+				items: 3,
+				margin: 40,
+				nav: true
+			},
+			1280: {
+				items: 3,
+				margin: 95,
+				nav: true
+			}
+		}
+	})
+
+
 	// Фильтр
 	$('aside .mob_filter_btn').click(function (e) {
 		e.preventDefault()
@@ -96,7 +132,7 @@ $(() => {
 	})
 
 
-	// Товар
+	// Страница товара
 	$('.product_info .images .big .slider').owlCarousel({
 		items: 1,
 		margin: 20,

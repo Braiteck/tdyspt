@@ -18,6 +18,21 @@
     }
 
 
+    .owl-carousel .owl-nav button.owl-prev
+    {
+        left: 0;
+
+        margin-left: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-next
+    {
+        right: 0;
+
+        margin-right: 0;
+    }
+
+
 
     /*------------
         Header
@@ -121,5 +136,15 @@
     .search_result .search_form .input
     {
         font-size: 26px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .slider
+    {
+        padding: 0 60px;
     }
 }

@@ -16,6 +16,12 @@
     }
 
 
+    .owl-dot + .owl-dot
+    {
+        margin-left: 12px;
+    }
+
+
 
     /*------------
         Header
@@ -556,6 +562,19 @@
     /*--------------
         Articles
     --------------*/
+    .articles .slider
+    {
+        padding: 0;
+    }
+
+    .articles .slider .owl-dots
+    {
+        right: 0;
+
+        justify-content: center;
+    }
+
+
     .articles .row
     {
         margin-bottom: -30px;

@@ -2715,6 +2715,17 @@ aside .steps .step.active:after
 /*--------------
     Articles
 --------------*/
+.articles .slider
+{
+    margin-bottom: 40px;
+}
+
+.articles .slider .owl-dots
+{
+    bottom: -40px;
+}
+
+
 .articles .row
 {
     margin-bottom: -45px;
@@ -2730,12 +2741,14 @@ aside .steps .step.active:after
 }
 
 
-.articles .row .article > * + *
+.articles .row .article > * + *,
+.articles .slide .article > * + *
 {
     margin-top: 20px;
 }
 
-.articles .row .article .thumb
+.articles .row .article .thumb,
+.articles .slide .article .thumb
 {
     position: relative;
 
@@ -2750,7 +2763,8 @@ aside .steps .step.active:after
     background: #fff;
 }
 
-.articles .row .article .thumb img
+.articles .row .article .thumb img,
+.articles .slide .article .thumb img
 {
     position: absolute;
     top: 0;
@@ -2765,13 +2779,15 @@ aside .steps .step.active:after
 }
 
 
-.articles .row .article .name
+.articles .row .article .name,
+.articles .slide .article .name
 {
     font-weight: 600;
     line-height: 23px;
 }
 
-.articles .row .article .name a
+.articles .row .article .name a,
+.articles .slide .article .name a
 {
     color: #fff;
 
@@ -2783,13 +2799,16 @@ aside .steps .step.active:after
 }
 
 .articles .row .article .thumb:hover ~ .name a,
-.articles .row .article .name a:hover
+.articles .row .article .name a:hover,
+.articles .slide .article .thumb:hover ~ .name a,
+.articles .slide .article .name a:hover
 {
     color: #de2e24;
 }
 
 
-.articles .row .article .date
+.articles .row .article .date,
+.articles .slide .article .date
 {
     color: #949599;
     font-weight: 600;
