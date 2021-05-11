@@ -109,6 +109,20 @@ $(() => {
 				margin: 95,
 				nav: true
 			}
+		},
+		onInitialized: event => {
+			setTimeout(() => {
+				$(event.target).find('.owl-nav button').css(
+					'top', ($(event.target).find('.thumb').outerHeight() / 2)
+				)
+			})
+		},
+		onResized: event => {
+			setTimeout(() => {
+				$(event.target).find('.owl-nav button').css(
+					'top', ($(event.target).find('.thumb').outerHeight() / 2)
+				)
+			})
 		}
 	})
 

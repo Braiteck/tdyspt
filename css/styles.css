@@ -2720,6 +2720,14 @@ aside .steps .step.active:after
     margin-bottom: 40px;
 }
 
+.articles .slider .owl-nav button
+{
+    top: 0;
+    bottom: auto;
+
+    margin-top: -30px;
+}
+
 .articles .slider .owl-dots
 {
     bottom: -40px;
